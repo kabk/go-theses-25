@@ -1,210 +1,237 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>KABK GD Theses 2025</title>
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>KABK GD Theses 2025</title>
 
-    <link rel="stylesheet" href="assets/css/normalize.css" />
-    <link rel="stylesheet" href="assets/css/styles.css" />
+        <link rel="stylesheet" href="assets/css/normalize.css" />
+        <link rel="stylesheet" href="assets/css/styles.css" />
 
-    <script src="assets/js/elements.js" defer></script>
-    <script src="assets/js/toggleView.js" defer></script>
-    <script src="assets/js/imageBG.js" defer></script>
-    <script src="assets/js/mobile.js" defer></script>
-    <script src="assets/js/filterSort.js" defer></script>
-    <script src="assets/js/misc.js" defer></script>
-  </head>
-  <body>
-    <div id="image_bg_container">
-      <img src="" alt="" id="image_bg" />
-    </div>
-    <div id="fixed_div">
-      <div>
-        <h1>Theses 2025<br />KABK Graphic Design</h1>
-        <div id="student_container_mobile">
-          <h2 id="name_mobile"></h2>
-          <h2 id="title_mobile"></h2>
-          <p id="question_mobile"></p>
+        <script src="assets/js/elements.js" defer></script>
+        <script src="assets/js/toggleView.js" defer></script>
+        <script src="assets/js/imageBG.js" defer></script>
+        <script src="assets/js/mobile.js" defer></script>
+        <script src="assets/js/filterSort.js" defer></script>
+        <script src="assets/js/misc.js" defer></script>
+
+        <link
+            href="assets/favicon/favicon.svg?ver=1.4"
+            rel="icon"
+            type="image/x-icon"
+        />
+        <link
+            href="assets/favicon/favicon.png?ver=1.4"
+            rel="icon"
+            type="image/x-icon"
+        />
+        <link
+            href="assets/favicon/favicon.svg?ver=1.4"
+            rel="icon"
+            type="image/x-icon"
+        />
+    </head>
+    <body>
+        <div id="image_bg_container">
+            <img src="" alt="" id="image_bg" />
         </div>
-      </div>
-      <p id="mobile_filter_toggle">▲ Filter</p>
-      <div id="filters_div">
-        <div id="view_div">
-          <p id="viewToggleGrid">Grid view</p>
-          <p id="viewToggleList">List view</p>
+        <div id="fixed_div">
+            <div>
+                <h1>Theses 2025<br />KABK Graphic Design</h1>
+                <div id="student_container_mobile">
+                    <h2 id="name_mobile"></h2>
+                    <h2 id="title_mobile"></h2>
+                    <p id="question_mobile"></p>
+                </div>
+            </div>
+            <p id="mobile_filter_toggle">▲ Filter</p>
+            <div id="filters_div">
+                <div id="view_div">
+                    <p>View</p>
+                    <p id="viewToggleGrid">Grid</p>
+                    <p id="viewToggleList">List</p>
+                </div>
+                <div id="sort_list_div">
+                    <p>Sort</p>
+                    <p class="sort_p" id="sort_toggle_author">by author</p>
+                    <p class="sort_p" id="sort_toggle_title">by title</p>
+                </div>
+                <div id="filter_list_div">
+                    <p>Filter</p>
+                    <p class="filter_p">Speculative</p>
+                    <p class="filter_p">Applied</p>
+                    <p class="filter_p">Aesthetics</p>
+                    <p class="filter_p">Gender</p>
+                    <p class="filter_p">Politics</p>
+                    <p class="filter_p">Identity</p>
+                    <p class="filter_p">Technology</p>
+                    <p class="filter_p">Nature</p>
+                    <p class="filter_p">Health</p>
+                    <p class="filter_p">Community</p>
+                    <p class="filter_p">Ornament</p>
+                    <p class="filter_p">Sound</p>
+                    <p class="filter_p">Letters</p>
+                </div>
+            </div>
         </div>
-        <div id="sort_list_div">
-          <p>Sort</p>
-          <p class="sort_p" id="sort_toggle_author">by author</p>
-          <p class="sort_p" id="sort_toggle_title">by title</p>
+        <div id="scrolling_div">
+            <div class="student_container" id="Konings">
+                <div class="name_title_container">
+                    <h2 class="title">
+                        A Belly Full of Stones and a Basket Filled with Flowers
+                    </h2>
+                    <h2 class="name">Luna Konings</h2>
+                </div>
+                <div class="keywords_container">
+                    <h2>Memories</h2>
+                    <h2>Sound</h2>
+                    <h2>Archive</h2>
+                </div>
+                <p class="question">
+                    The wolf is back in the Netherlands! But which wolf?
+                </p>
+                <p class="preview_text">
+                    Throughout history the wolf has taken on many forms: a
+                    thief, an unholy monk, a sexual predator, a tyrant, a racist
+                    caricature, a Nazi, an unwanted body of water and a symbol
+                    of the other.
+                </p>
+            </div>
+
+            <div class="student_container" id="Akkermans">
+                <div class="name_title_container">
+                    <h2 class="title">Women of the Right</h2>
+                    <h2 class="name">Kim Akkermans</h2>
+                </div>
+                <div class="keywords_container">
+                    <h2>Feminism</h2>
+                    <h2>Transition</h2>
+                    <h2>Contradictions</h2>
+                </div>
+                <p class="question">
+                    Navigating (Anti-)Feminism and Gender Politics in
+                    Contemporary European Right-Wing Movements
+                </p>
+                <p class="preview_text">
+                    The 2023 Dutch elections revealed a troubling shift toward
+                    right-wing politics, especially among young voters. As a
+                    feminist, I am concerned by the rise of women in right-wing
+                    leadership roles, given their movements often undermine
+                    women's autonomy and reinforce patriarchal structures. My
+                    research explores the motivations behind women's involvement
+                    in these politics, the tension between feminism and
+                    right-wing ideology, and the sociocultural factors
+                    influencing this participation, using historical and
+                    contemporary perspectives.
+                </p>
+            </div>
+            <div class="student_container" id="Bialas">
+                <div class="name_title_container">
+                    <h2 class="title">
+                        Rhetorics of ornaments in objects of rituals in Roman
+                        Catholic Church
+                    </h2>
+                    <h2 class="name">Hanna Białas</h2>
+                </div>
+                <div class="keywords_container">
+                    <h2>Religious identity</h2>
+                    <h2>Rituals</h2>
+                    <h2>Ornamentation</h2>
+                </div>
+                <p class="question"></p>
+                <p class="preview_text"></p>
+            </div>
+            <div class="student_container" id="Chita">
+                <div class="name_title_container">
+                    <h2 class="title">Echoes of Influence</h2>
+                    <h2 class="name">Ana Chiţă</h2>
+                </div>
+                <div class="keywords_container">
+                    <h2>Visual identity</h2>
+                    <h2>Propaganda</h2>
+                    <h2>Publications</h2>
+                </div>
+                <p class="question">
+                    How did graphic design in Romania evolve throughout the 20th
+                    century, and what role did political and cultural shifts
+                    play in shaping its visual identity?
+                </p>
+                <p class="preview_text">
+                    How has graphic design shaped Romania’s visual identity in
+                    the 20th century? This research explores periodical
+                    publications, revealing how design evolved from Western
+                    influences to communist propaganda, shaping perception and
+                    national identity.
+                </p>
+            </div>
+            <div class="student_container" id="Jaspers">
+                <div class="name_title_container">
+                    <h2 class="title">Do lambs roar? ( Yes / No)</h2>
+                    <h2 class="name">Angèle Jaspers</h2>
+                </div>
+                <div class="keywords_container">
+                    <h2>Psychology</h2>
+                    <h2>Language</h2>
+                    <h2></h2>
+                </div>
+                <p class="question"></p>
+                <p class="preview_text">
+                    This inquiry is born out of a tension I personally feel
+                    between my fascination with the aesthetic quality of
+                    psychological tests and an awkwardness with the
+                    classificatory power these tests carry. As a translation of
+                    this experience, this thesis explores the tensions between
+                    psychological tests as medical-scientific instruments, as
+                    tools of power, and as works of (graphic) design.
+                </p>
+            </div>
+            <div class="student_container" id="Hyun">
+                <div class="name_title_container">
+                    <h2 class="title">Subtitles & Captions</h2>
+                    <h2 class="name">Sung Hyun Hwang</h2>
+                </div>
+                <div class="keywords_container">
+                    <h2>Language</h2>
+                    <h2>Meditation</h2>
+                    <h2>Writing</h2>
+                </div>
+                <p class="question">
+                    Can my life in the Netherlands become the subtitles of my
+                    story?
+                </p>
+                <p class="preview_text">
+                    "Like the hierarchy between subtitles and main content, I
+                    have often felt like a secondary presence— an afterthought,
+                    a whisper beneath the noise. In a foreign land, speaking
+                    words that don’t quite translate, I wonder: Can I step out
+                    of the subtitles and become the main content of my own
+                    story?"
+                </p>
+            </div>
+            <div class="student_container" id="Fransen">
+                <div class="name_title_container">
+                    <h2 class="title">Let’s talk about Yasmin</h2>
+                    <h2 class="name">Yara Fransen</h2>
+                </div>
+                <div class="keywords_container">
+                    <h2>Feminism</h2>
+                    <h2>Societal Expectations</h2>
+                    <h2>Medical Patriarchy</h2>
+                </div>
+                <p class="question">
+                    Can my life in the Netherlands become the subtitles of my
+                    story?
+                </p>
+                <p class="preview_text">
+                    "Like the hierarchy between subtitles and main content, I
+                    have often felt like a secondary presence— an afterthought,
+                    a whisper beneath the noise. In a foreign land, speaking
+                    words that don’t quite translate, I wonder: Can I step out
+                    of the subtitles and become the main content of my own
+                    story?"
+                </p>
+            </div>
         </div>
-        <div id="filter_list_div">
-          <p>Filter</p>
-          <p class="filter_p">Speculative</p>
-          <p class="filter_p">Applied</p>
-          <p class="filter_p">Aesthetics</p>
-          <p class="filter_p">Gender</p>
-          <p class="filter_p">Politics</p>
-          <p class="filter_p">Identity</p>
-          <p class="filter_p">Technology</p>
-          <p class="filter_p">Nature</p>
-          <p class="filter_p">Health</p>
-          <p class="filter_p">Community</p>
-          <p class="filter_p">Ornament</p>
-          <p class="filter_p">Sound</p>
-          <p class="filter_p">Letters</p>
-        </div>
-      </div>
-    </div>
-    <div id="scrolling_div">
-      <div class="student_container" id="Konings">
-        <div class="keywords_container">
-          <h2>Memories</h2>
-          <h2>Sound</h2>
-          <h2>Archive</h2>
-        </div>
-        <div class="name_title_container">
-          <h2 class="name">Luna Konings</h2>
-          <h2 class="title">
-            A Belly Full of Stones and a Basket Filled with Flowers
-          </h2>
-        </div>
-        <p class="question">
-          The wolf is back in the Netherlands! But which wolf?
-        </p>
-        <p class="preview_text">
-          Throughout history the wolf has taken on many forms: a thief, an
-          unholy monk, a sexual predator, a tyrant, a racist caricature, a Nazi,
-          an unwanted body of water and a symbol of the other.
-        </p>
-      </div>
-      <div class="student_container" id="Akkermans">
-        <div class="keywords_container">
-          <h2>Feminism</h2>
-          <h2>Transition</h2>
-          <h2>Contradictions</h2>
-        </div>
-        <div class="name_title_container">
-          <h2 class="name">Kim Akkermans</h2>
-          <h2 class="title">Women of the Right</h2>
-        </div>
-        <p class="question">
-          Navigating (Anti-)Feminism and Gender Politics in Contemporary
-          European Right-Wing Movements
-        </p>
-        <p class="preview_text">
-          The 2023 Dutch elections revealed a troubling shift toward right-wing
-          politics, especially among young voters. As a feminist, I am concerned
-          by the rise of women in right-wing leadership roles, given their
-          movements often undermine women's autonomy and reinforce patriarchal
-          structures. My research explores the motivations behind women's
-          involvement in these politics, the tension between feminism and
-          right-wing ideology, and the sociocultural factors influencing this
-          participation, using historical and contemporary perspectives.
-        </p>
-      </div>
-      <div class="student_container" id="Bialas">
-        <div class="keywords_container">
-          <h2>Religious identity</h2>
-          <h2>Rituals</h2>
-          <h2>Ornamentation</h2>
-        </div>
-        <div class="name_title_container">
-          <h2 class="name">Hanna Białas</h2>
-          <h2 class="title">
-            Rhetorics of ornaments in objects of rituals in Roman Catholic
-            Church
-          </h2>
-        </div>
-        <p class="question"></p>
-        <p class="preview_text"></p>
-      </div>
-      <div class="student_container" id="Chita">
-        <div class="keywords_container">
-          <h2>Visual identity</h2>
-          <h2>Propaganda</h2>
-          <h2>Publications</h2>
-        </div>
-        <div class="name_title_container">
-          <h2 class="name">Ana Chiţă</h2>
-          <h2 class="title">Echoes of Influence</h2>
-        </div>
-        <p class="question">
-          How did graphic design in Romania evolve throughout the 20th century,
-          and what role did political and cultural shifts play in shaping its
-          visual identity?
-        </p>
-        <p class="preview_text">
-          How has graphic design shaped Romania’s visual identity in the 20th
-          century? This research explores periodical publications, revealing how
-          design evolved from Western influences to communist propaganda,
-          shaping perception and national identity.
-        </p>
-      </div>
-      <div class="student_container" id="Jaspers">
-        <div class="keywords_container">
-          <h2>Psychology</h2>
-          <h2>Language</h2>
-          <h2></h2>
-        </div>
-        <div class="name_title_container">
-          <h2 class="name">Angèle Jaspers</h2>
-          <h2 class="title">Do lambs roar? ( Yes / No)</h2>
-        </div>
-        <p class="question"></p>
-        <p class="preview_text">
-          This inquiry is born out of a tension I personally feel between my
-          fascination with the aesthetic quality of psychological tests and an
-          awkwardness with the classificatory power these tests carry. As a
-          translation of this experience, this thesis explores the tensions
-          between psychological tests as medical-scientific instruments, as
-          tools of power, and as works of (graphic) design.
-        </p>
-      </div>
-      <div class="student_container" id="Hyun">
-        <div class="keywords_container">
-          <h2>Language</h2>
-          <h2>Meditation</h2>
-          <h2>Writing</h2>
-        </div>
-        <div class="name_title_container">
-          <h2 class="name">Sung Hyun Hwang</h2>
-          <h2 class="title">Subtitles & Captions</h2>
-        </div>
-        <p class="question">
-          Can my life in the Netherlands become the subtitles of my story?
-        </p>
-        <p class="preview_text">
-          "Like the hierarchy between subtitles and main content, I have often
-          felt like a secondary presence— an afterthought, a whisper beneath the
-          noise. In a foreign land, speaking words that don’t quite translate, I
-          wonder: Can I step out of the subtitles and become the main content of
-          my own story?"
-        </p>
-      </div>
-      <div class="student_container" id="Fransen">
-        <div class="keywords_container">
-          <h2>Feminism</h2>
-          <h2>Societal Expectations</h2>
-          <h2>Medical Patriarchy</h2>
-        </div>
-        <div class="name_title_container">
-          <h2 class="name">Yara Fransen</h2>
-          <h2 class="title">Let’s talk about Yasmin</h2>
-        </div>
-        <p class="question">
-          Can my life in the Netherlands become the subtitles of my story?
-        </p>
-        <p class="preview_text">
-          "Like the hierarchy between subtitles and main content, I have often
-          felt like a secondary presence— an afterthought, a whisper beneath the
-          noise. In a foreign land, speaking words that don’t quite translate, I
-          wonder: Can I step out of the subtitles and become the main content of
-          my own story?"
-        </p>
-      </div>
-    </div>
-    <div id="name_list_mobile"></div>
-  </body>
+        <div id="name_list_mobile"></div>
+    </body>
 </html>

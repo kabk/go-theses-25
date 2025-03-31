@@ -35,4 +35,6 @@ let scrolling_div = document.getElementById("scrolling_div")
 let name_list_mobile = document.getElementById("name_list_mobile")
 
 
-const isMobile = /iPhone|iPad|iPod|Android/i.test(navigator.userAgent);
+var isSafari = /constructor/i.test(window.HTMLElement) || (function (p) {
+    return p.toString() === "[object SafariRemoteNotification]";
+})(!window['safari'] || (typeof safari !== 'undefined' && safari.pushNotification));

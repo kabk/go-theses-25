@@ -1,4 +1,4 @@
-if(isMobile){
+if(window.innerWidth<499){
 
     let keywords_container_mobile = document.createElement("div");
         keywords_container_mobile.classList.add("keywords_container")

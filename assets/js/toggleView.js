@@ -17,6 +17,11 @@ function changeToGrid(){
         titles[i].style.fontSize = "0.9em"
         questions[i].style.display = "block"
         preview_texts[i].style.display = "block"
+
+        if(isSafari){
+            names[i].style.fontSize = "1.5em"
+            titles[i].style.fontSize = "1.5em"
+        }
     }
     currentView = "grid"
 }
@@ -41,12 +46,17 @@ function changeToList(){
         titles[i].style.fontSize = "0.6em"
         questions[i].style.display = "none"
         preview_texts[i].style.display = "none"
+
+        if(isSafari){
+            names[i].style.fontSize = "1em"
+            titles[i].style.fontSize = "1em"
+        }
     }
     currentView = "list"
 }
 
 
-if(!isMobile){
+if(window.innerWidth>499){
     viewToggleGrid.addEventListener("click",()=>{
         if(currentView == "list"){
             changeToGrid()
@@ -60,7 +70,7 @@ if(!isMobile){
     })
     
     window.addEventListener("resize",()=>{
-        if(window.innerWidth < 399){
+        if(window.innerWidth < 499){
             location.reload()
         }
     })

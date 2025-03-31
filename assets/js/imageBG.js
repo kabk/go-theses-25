@@ -1,4 +1,4 @@
-if(!isMobile){
+if(window.innerWidth>499){
     
     for(i=0;i<titles.length;i++){
         titles[i].addEventListener("mouseenter",(titleElement)=>{

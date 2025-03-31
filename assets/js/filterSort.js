@@ -45,7 +45,7 @@ function clearAllStudents(){
     Array.prototype.forEach.call(student_containers, function(student_container) {
         student_container.style.display = "none"
     })
-    if(isMobile){
+    if(window.innerWidth<499){
         for(i=0;i<name_list_mobile.children.length;i++){
             name_list_mobile.children[i].style.display = "none"
         }
@@ -62,7 +62,7 @@ function displayAllStudents(){
             currentDisplayingStudents.push(student_containers[i].id)
         }
     }
-    if(isMobile){
+    if(window.innerWidth<499){
         for(i=0;i<name_list_mobile.children.length;i++){
             name_list_mobile.children[i].style.display = "block"
         }
@@ -81,7 +81,7 @@ function displayFilteredStudents(){
         }
     }
 
-    if(isMobile){
+    if(window.innerWidth<499){
         for(i=0;i<currentDisplayingStudents.length;i++){
             let nameListElementID = "mobile_name_list_" + currentDisplayingStudents[i]
             document.getElementById(nameListElementID).style.display = "block"
@@ -139,7 +139,7 @@ function sortByAuthor(){
         scrolling_div.removeChild(studentContainer_NameSorted)
         scrolling_div.appendChild(studentContainer_NameSorted)
 
-        if(isMobile){
+        if(window.innerWidth<499){
             let mobileNameListItem_Sorted = document.getElementById("mobile_name_list_" + sortedNames[i])
             name_list_mobile.removeChild(mobileNameListItem_Sorted)
             name_list_mobile.appendChild(mobileNameListItem_Sorted)

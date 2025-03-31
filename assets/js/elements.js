@@ -3,6 +3,7 @@ let image_bg = document.getElementById("image_bg")
 let student_container_mobile = document.getElementById("student_container_mobile")
     let name_mobile = document.getElementById("name_mobile")
     let title_mobile = document.getElementById("title_mobile")
+        let title_link_mobile = document.getElementById("title_link_mobile")
     let question_mobile = document.getElementById("question_mobile")
 
 let mobile_filter_toggle = document.getElementById("mobile_filter_toggle")
@@ -20,14 +21,18 @@ let filter_list_div = document.getElementById("filter_list_div")
 
 
 let scrolling_div = document.getElementById("scrolling_div")
+    let welcome_container = document.getElementById("AA")
     let student_containers = document.querySelectorAll(".student_container")
         let keywords_containers = document.querySelectorAll(".keywords_container")
             let allKeywords = document.querySelectorAll(".keywords_container h2")
         let name_title_containers = document.querySelectorAll(".name_title_container")
-        let names = document.querySelectorAll(".name")
-        let titles = document.querySelectorAll(".title")
+            let titles = document.querySelectorAll(".title")
+            let names = document.querySelectorAll(".name")
         let questions = document.querySelectorAll(".question")
         let preview_texts = document.querySelectorAll(".preview_text")
 
 
 let name_list_mobile = document.getElementById("name_list_mobile")
+
+
+const isMobile = /iPhone|iPad|iPod|Android/i.test(navigator.userAgent);

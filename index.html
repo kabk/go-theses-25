@@ -1,237 +1,1164 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>KABK GD Theses 2025</title>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>KABK GD Theses 2025</title>
 
-        <link rel="stylesheet" href="assets/css/normalize.css" />
-        <link rel="stylesheet" href="assets/css/styles.css" />
+    <link rel="stylesheet" href="assets/css/normalize.css" />
+    <link rel="stylesheet" href="assets/css/styles.css" />
 
-        <script src="assets/js/elements.js" defer></script>
-        <script src="assets/js/toggleView.js" defer></script>
-        <script src="assets/js/imageBG.js" defer></script>
-        <script src="assets/js/mobile.js" defer></script>
-        <script src="assets/js/filterSort.js" defer></script>
-        <script src="assets/js/misc.js" defer></script>
+    <script src="assets/js/elements.js" defer></script>
+    <script src="assets/js/toggleView.js" defer></script>
+    <script src="assets/js/imageBG.js" defer></script>
+    <script src="assets/js/mobile.js" defer></script>
+    <script src="assets/js/filterSort.js" defer></script>
+    <script src="assets/js/misc.js" defer></script>
 
-        <link
-            href="assets/favicon/favicon.svg?ver=1.4"
-            rel="icon"
-            type="image/x-icon"
-        />
-        <link
-            href="assets/favicon/favicon.png?ver=1.4"
-            rel="icon"
-            type="image/x-icon"
-        />
-        <link
-            href="assets/favicon/favicon.svg?ver=1.4"
-            rel="icon"
-            type="image/x-icon"
-        />
-    </head>
-    <body>
-        <div id="image_bg_container">
-            <img src="" alt="" id="image_bg" />
+    <link
+      href="assets/favicon/favicon.svg?ver=1.4"
+      rel="icon"
+      type="image/x-icon"
+    />
+    <link
+      href="assets/favicon/favicon.png?ver=1.4"
+      rel="icon"
+      type="image/x-icon"
+    />
+    <link
+      href="assets/favicon/favicon.svg?ver=1.4"
+      rel="icon"
+      type="image/x-icon"
+    />
+  </head>
+  <body>
+    <div id="image_bg_container">
+      <img src="" alt="" id="image_bg" />
+      <div id="mobile_gradient"></div>
+    </div>
+    <div id="fixed_div">
+      <div>
+        <h1>Theses 2025<br />KABK Graphic Design</h1>
+        <div id="student_container_mobile">
+          <a id="title_link_mobile" target="_blank"
+            ><h2 id="title_mobile"></h2
+          ></a>
+          <h2 id="name_mobile"></h2>
+          <p id="question_mobile"></p>
         </div>
-        <div id="fixed_div">
-            <div>
-                <h1>Theses 2025<br />KABK Graphic Design</h1>
-                <div id="student_container_mobile">
-                    <h2 id="name_mobile"></h2>
-                    <h2 id="title_mobile"></h2>
-                    <p id="question_mobile"></p>
-                </div>
-            </div>
-            <p id="mobile_filter_toggle">▲ Filter</p>
-            <div id="filters_div">
-                <div id="view_div">
-                    <p>View</p>
-                    <p id="viewToggleGrid">Grid</p>
-                    <p id="viewToggleList">List</p>
-                </div>
-                <div id="sort_list_div">
-                    <p>Sort</p>
-                    <p class="sort_p" id="sort_toggle_author">by author</p>
-                    <p class="sort_p" id="sort_toggle_title">by title</p>
-                </div>
-                <div id="filter_list_div">
-                    <p>Filter</p>
-                    <p class="filter_p">Speculative</p>
-                    <p class="filter_p">Applied</p>
-                    <p class="filter_p">Aesthetics</p>
-                    <p class="filter_p">Gender</p>
-                    <p class="filter_p">Politics</p>
-                    <p class="filter_p">Identity</p>
-                    <p class="filter_p">Technology</p>
-                    <p class="filter_p">Nature</p>
-                    <p class="filter_p">Health</p>
-                    <p class="filter_p">Community</p>
-                    <p class="filter_p">Ornament</p>
-                    <p class="filter_p">Sound</p>
-                    <p class="filter_p">Letters</p>
-                </div>
-            </div>
+      </div>
+      <p id="mobile_filter_toggle">↑ Filter</p>
+      <div id="filters_div">
+        <div id="view_list_div">
+          <p>View</p>
+          <p id="viewToggleList">List</p>
+          <p id="viewToggleGrid">Grid</p>
         </div>
-        <div id="scrolling_div">
-            <div class="student_container" id="Konings">
-                <div class="name_title_container">
-                    <h2 class="title">
-                        A Belly Full of Stones and a Basket Filled with Flowers
-                    </h2>
-                    <h2 class="name">Luna Konings</h2>
-                </div>
-                <div class="keywords_container">
-                    <h2>Memories</h2>
-                    <h2>Sound</h2>
-                    <h2>Archive</h2>
-                </div>
-                <p class="question">
-                    The wolf is back in the Netherlands! But which wolf?
-                </p>
-                <p class="preview_text">
-                    Throughout history the wolf has taken on many forms: a
-                    thief, an unholy monk, a sexual predator, a tyrant, a racist
-                    caricature, a Nazi, an unwanted body of water and a symbol
-                    of the other.
-                </p>
-            </div>
-
-            <div class="student_container" id="Akkermans">
-                <div class="name_title_container">
-                    <h2 class="title">Women of the Right</h2>
-                    <h2 class="name">Kim Akkermans</h2>
-                </div>
-                <div class="keywords_container">
-                    <h2>Feminism</h2>
-                    <h2>Transition</h2>
-                    <h2>Contradictions</h2>
-                </div>
-                <p class="question">
-                    Navigating (Anti-)Feminism and Gender Politics in
-                    Contemporary European Right-Wing Movements
-                </p>
-                <p class="preview_text">
-                    The 2023 Dutch elections revealed a troubling shift toward
-                    right-wing politics, especially among young voters. As a
-                    feminist, I am concerned by the rise of women in right-wing
-                    leadership roles, given their movements often undermine
-                    women's autonomy and reinforce patriarchal structures. My
-                    research explores the motivations behind women's involvement
-                    in these politics, the tension between feminism and
-                    right-wing ideology, and the sociocultural factors
-                    influencing this participation, using historical and
-                    contemporary perspectives.
-                </p>
-            </div>
-            <div class="student_container" id="Bialas">
-                <div class="name_title_container">
-                    <h2 class="title">
-                        Rhetorics of ornaments in objects of rituals in Roman
-                        Catholic Church
-                    </h2>
-                    <h2 class="name">Hanna Białas</h2>
-                </div>
-                <div class="keywords_container">
-                    <h2>Religious identity</h2>
-                    <h2>Rituals</h2>
-                    <h2>Ornamentation</h2>
-                </div>
-                <p class="question"></p>
-                <p class="preview_text"></p>
-            </div>
-            <div class="student_container" id="Chita">
-                <div class="name_title_container">
-                    <h2 class="title">Echoes of Influence</h2>
-                    <h2 class="name">Ana Chiţă</h2>
-                </div>
-                <div class="keywords_container">
-                    <h2>Visual identity</h2>
-                    <h2>Propaganda</h2>
-                    <h2>Publications</h2>
-                </div>
-                <p class="question">
-                    How did graphic design in Romania evolve throughout the 20th
-                    century, and what role did political and cultural shifts
-                    play in shaping its visual identity?
-                </p>
-                <p class="preview_text">
-                    How has graphic design shaped Romania’s visual identity in
-                    the 20th century? This research explores periodical
-                    publications, revealing how design evolved from Western
-                    influences to communist propaganda, shaping perception and
-                    national identity.
-                </p>
-            </div>
-            <div class="student_container" id="Jaspers">
-                <div class="name_title_container">
-                    <h2 class="title">Do lambs roar? ( Yes / No)</h2>
-                    <h2 class="name">Angèle Jaspers</h2>
-                </div>
-                <div class="keywords_container">
-                    <h2>Psychology</h2>
-                    <h2>Language</h2>
-                    <h2></h2>
-                </div>
-                <p class="question"></p>
-                <p class="preview_text">
-                    This inquiry is born out of a tension I personally feel
-                    between my fascination with the aesthetic quality of
-                    psychological tests and an awkwardness with the
-                    classificatory power these tests carry. As a translation of
-                    this experience, this thesis explores the tensions between
-                    psychological tests as medical-scientific instruments, as
-                    tools of power, and as works of (graphic) design.
-                </p>
-            </div>
-            <div class="student_container" id="Hyun">
-                <div class="name_title_container">
-                    <h2 class="title">Subtitles & Captions</h2>
-                    <h2 class="name">Sung Hyun Hwang</h2>
-                </div>
-                <div class="keywords_container">
-                    <h2>Language</h2>
-                    <h2>Meditation</h2>
-                    <h2>Writing</h2>
-                </div>
-                <p class="question">
-                    Can my life in the Netherlands become the subtitles of my
-                    story?
-                </p>
-                <p class="preview_text">
-                    "Like the hierarchy between subtitles and main content, I
-                    have often felt like a secondary presence— an afterthought,
-                    a whisper beneath the noise. In a foreign land, speaking
-                    words that don’t quite translate, I wonder: Can I step out
-                    of the subtitles and become the main content of my own
-                    story?"
-                </p>
-            </div>
-            <div class="student_container" id="Fransen">
-                <div class="name_title_container">
-                    <h2 class="title">Let’s talk about Yasmin</h2>
-                    <h2 class="name">Yara Fransen</h2>
-                </div>
-                <div class="keywords_container">
-                    <h2>Feminism</h2>
-                    <h2>Societal Expectations</h2>
-                    <h2>Medical Patriarchy</h2>
-                </div>
-                <p class="question">
-                    Can my life in the Netherlands become the subtitles of my
-                    story?
-                </p>
-                <p class="preview_text">
-                    "Like the hierarchy between subtitles and main content, I
-                    have often felt like a secondary presence— an afterthought,
-                    a whisper beneath the noise. In a foreign land, speaking
-                    words that don’t quite translate, I wonder: Can I step out
-                    of the subtitles and become the main content of my own
-                    story?"
-                </p>
-            </div>
+        <div id="sort_list_div">
+          <p>Sort</p>
+          <p class="sort_p" id="sort_toggle_author">by author</p>
+          <p class="sort_p" id="sort_toggle_title">by title</p>
         </div>
-        <div id="name_list_mobile"></div>
-    </body>
+        <div id="filter_list_div">
+          <p>Filter</p>
+          <p class="filter_p">Speculative</p>
+          <p class="filter_p">Applied</p>
+          <p class="filter_p">Aesthetics</p>
+          <p class="filter_p">Gender</p>
+          <p class="filter_p">Politics</p>
+          <p class="filter_p">Identity</p>
+          <p class="filter_p">Technology</p>
+          <p class="filter_p">Nature</p>
+          <p class="filter_p">Health</p>
+          <p class="filter_p">Community</p>
+          <p class="filter_p">Ornament</p>
+          <p class="filter_p">Sound</p>
+          <p class="filter_p">Letters</p>
+        </div>
+      </div>
+    </div>
+    <div id="scrolling_div">
+      <div class="student_container" id="AA">
+        <div class="name_title_container">
+          <h2 class="title">
+            <a>Scroll :)</a>
+          </h2>
+          <h2 class="name">Welcome!</h2>
+        </div>
+        <div class="keywords_container">
+          <h2></h2>
+          <h2></h2>
+          <h2></h2>
+          <h2></h2>
+        </div>
+        <p class="question">
+          Landing page by Maja, Patrycja, Sára, Nu, and Joana.
+        </p>
+        <p class="preview_text"></p>
+      </div>
+      <div class="student_container" id="Akkermans">
+        <div class="name_title_container">
+          <h2 class="title">
+            <a
+              href="https://kabk.github.io/go-theses-25-kim-akkermans/"
+              target="_blank"
+              >Women of the Right →</a
+            >
+          </h2>
+          <h2 class="name">Kim Akkermans</h2>
+        </div>
+        <div class="keywords_container">
+          <h2>Feminism</h2>
+          <h2>Transition</h2>
+          <h2>Contradictions</h2>
+          <h2></h2>
+        </div>
+        <p class="question">
+          Navigating (Anti-)Feminism and Gender Politics in Contemporary
+          European Right-Wing Movements
+        </p>
+        <p class="preview_text">
+          The 2023 Dutch elections revealed a troubling shift toward right-wing
+          politics, especially among young voters. As a feminist, I am concerned
+          by the rise of women in right-wing leadership roles, given their
+          movements often undermine women's autonomy and reinforce patriarchal
+          structures. My research explores the motivations behind women's
+          involvement in these politics, the tension between feminism and
+          right-wing ideology, and the sociocultural factors influencing this
+          participation, using historical and contemporary perspectives.
+        </p>
+      </div>
+      <div class="student_container" id="Anghel">
+        <div class="name_title_container">
+          <h2 class="title">
+            <a
+              href="https://kabk.github.io/go-theses-25-ruxandra-anghel/"
+              target="_blank"
+            >
+              Mapping: a tool for understanding reality →
+            </a>
+          </h2>
+          <h2 class="name">Ruxi Anghel</h2>
+        </div>
+        <div class="keywords_container">
+          <h2>Maps</h2>
+          <h2>Perspectives</h2>
+          <h2>Organizing Knowledge</h2>
+          <h2></h2>
+        </div>
+        <p class="question">
+          How do we engage in the habit of mapping while navigating a reality
+          that is inherentl constructed? What happens when those assigned to
+          create meaning—whether through physical maps or digital platforms—
+          impose their beliefs; and how does this influence our collective
+          memory and understanding of place?
+        </p>
+        <p class="preview_text">
+          This thesis explores the concept of mapping as a means of reflecting
+          human efforts to comprehend and structure the world, emphasizing its
+          significance in shaping our perception of reality and memory. Mapping
+          is presented as both a cognitive and creative process. While
+          cartography plays a fundamental role in how we navigate and make sense
+          of our surroundings, mapping also involves the organization,
+          interpretation, and understanding of experiences, memory, and space.
+        </p>
+      </div>
+      <div class="student_container" id="Bialas">
+        <div class="name_title_container">
+          <h2 class="title">
+            <a
+              href="https://kabk.github.io/go-theses-25-hanna-bialas"
+              target="_blank"
+            >
+              Rhetorics of ornaments in objects of rituals in Roman Catholic
+              Church →
+            </a>
+          </h2>
+          <h2 class="name">Hanna Białas</h2>
+        </div>
+        <div class="keywords_container">
+          <h2>Religious identity</h2>
+          <h2>Rituals</h2>
+          <h2>Ornamentation</h2>
+          <h2></h2>
+        </div>
+        <p class="question"></p>
+        <p class="preview_text"></p>
+      </div>
+      <div class="student_container" id="Bielawska">
+        <div class="name_title_container">
+          <h2 class="title">
+            <a
+              href="https://kabk.github.io/go-theses-25-maja-bielawska"
+              target="_blank"
+            >
+              "I feel different from other women, and I feel inferior" →
+            </a>
+          </h2>
+          <h2 class="name">Maja Bielawska</h2>
+        </div>
+        <div class="keywords_container">
+          <h2>Painful Sex</h2>
+          <h2>Compassion</h2>
+          <h2>Opportunities</h2>
+          <h2></h2>
+        </div>
+        <p class="question">
+          What role can informed design play in supporting people with
+          vaginismus?
+        </p>
+        <p class="preview_text">
+          We all know about sex, we all know women, and we all know pain, but
+          why haven’t we heard of vaginismus? Exploring medical, historical, and
+          social context of the condition, useful design frameworks and
+          speculating opportunities.
+        </p>
+      </div>
+      <div class="student_container" id="Bruijn">
+        <div class="name_title_container">
+          <h2 class="title">
+            <a
+              href="https://kabk.github.io/go-theses-25-leon-de-bruijn"
+              target="_blank"
+            >
+              Hijack Hifi, Pop Up Hip Hop, DIY Disco & Joie de Vivre →
+            </a>
+          </h2>
+          <h2 class="name">Leon de Bruijn</h2>
+        </div>
+        <div class="keywords_container">
+          <h2>Hijacking Space</h2>
+          <h2>Grassroots</h2>
+          <h2>Partying</h2>
+          <h2></h2>
+        </div>
+        <p class="question">
+          How can communities take matters into their own hands and organize
+          grassroots parties, outside of mainstream leisure spaces, as a way to
+          meet essential needs of their community?
+        </p>
+        <p class="preview_text">
+          How can communities take matters into their own hands and organize
+          grassroots parties, outside of mainstream leisure spaces, as a way to
+          meet essential needs of their community? This thesis explores that
+          question by examining historical examples such as Jamaican sound
+          system culture, Bronx block parties, and early underground disco,
+          alongside field research from Marseille. These parties reclaim and
+          transform spaces, often designed for capitalist-oriented functions,
+          into hubs of community-building self-expression, and collective joy.
+        </p>
+      </div>
+      <div class="student_container" id="Chita">
+        <div class="name_title_container">
+          <h2 class="title">
+            <a
+              href="https://kabk.github.io/go-theses-25-ana-chita"
+              target="_blank"
+              >Echoes of Influence →</a
+            >
+          </h2>
+          <h2 class="name">Ana Chiţă</h2>
+        </div>
+        <div class="keywords_container">
+          <h2>Visual Identity</h2>
+          <h2>Propaganda</h2>
+          <h2>Publications</h2>
+          <h2></h2>
+        </div>
+        <p class="question">
+          How did graphic design in Romania evolve throughout the 20th century,
+          and what role did political and cultural shifts play in shaping its
+          visual identity?
+        </p>
+        <p class="preview_text">
+          How has graphic design shaped Romania’s visual identity in the 20th
+          century? This research explores periodical publications, revealing how
+          design evolved from Western influences to communist propaganda,
+          shaping perception and national identity.
+        </p>
+      </div>
+      <div class="student_container" id="Doan">
+        <div class="name_title_container">
+          <h2 class="title">
+            <a
+              href="https://kabk.github.io/go-theses-25-elly-doan"
+              target="_blank"
+              >Follow the Pink Tail →</a
+            >
+          </h2>
+          <h2 class="name">Elly Doan</h2>
+        </div>
+        <div class="keywords_container">
+          <h2>Coexistence</h2>
+          <h2>Tales</h2>
+          <h2>Parasite</h2>
+          <h2></h2>
+        </div>
+        <p class="question">Rat and human relations</p>
+        <p class="preview_text">
+          This paper uncovers the quiet, yet ever-present relationship between
+          the rat and the human. Motivated by my irrational fear of these
+          small-ish rodents, I researched why the rat has gained its pejorative
+          connotation here in the West. In the following chapters I’ll examine
+          how history and culture have shaped its identity in society, from the
+          Black Death of the Middle Ages and animated cartoons to religious
+          mythology and demining initiatives ultimately posing the question: Can
+          we imagine a future of coexistence with them?
+        </p>
+      </div>
+      <div class="student_container" id="Fixl">
+        <div class="name_title_container">
+          <h2 class="title">
+            <a
+              href="https://kabk.github.io/go-theses-25-patrycja-fixl"
+              target="_blank"
+              >Avatour—Unpacking platform tourism →</a
+            >
+          </h2>
+          <h2 class="name">Patrycja Fixl</h2>
+        </div>
+        <div class="keywords_container">
+          <h2>Platform</h2>
+          <h2>Tourism</h2>
+          <h2>Media Theory</h2>
+          <h2></h2>
+        </div>
+        <p class="question">
+          How can tourist-mode facilitate escaping platform traps and
+          algorithm-induced decision-making?
+        </p>
+        <p class="preview_text">
+          How can tourist-mode facilitate escaping platform traps and
+          algorithm-induced decision-making? The condition of contemporary
+          tourism examined through the analysis of historical records, media
+          theory, net criticism, philosophy and social media platforms
+          themselves.
+        </p>
+      </div>
+      <div class="student_container" id="Fransen">
+        <div class="name_title_container">
+          <h2 class="title">
+            <a
+              href="https://kabk.github.io/go-theses-25-yara-fransen"
+              target="_blank"
+              >Let’s talk about Yasmin →</a
+            >
+          </h2>
+          <h2 class="name">Yara Fransen</h2>
+        </div>
+        <div class="keywords_container">
+          <h2>Feminism</h2>
+          <h2>Societal Expectations</h2>
+          <h2>Medical Patriarchy</h2>
+          <h2></h2>
+        </div>
+        <p class="question">Hormonal contraceptive realities</p>
+        <p class="preview_text">
+          Who is Yasmin? How can Yasmin make us feel? What do we not know about
+          Yasmin? Are we allowed to be unhappy with Yasmin? This thesis explores
+          the complex relationship womxn have with hormonal contraceptives,
+          highlighting gaps in medical research and communication that leave
+          them unaware of the full physical and mental impacts. A key focus is
+          the branding of contraceptives with female names—Yasmin, Mirena,
+          Zarah—framing them as trusted companions. Through personal writings, I
+          personify ‘Yasmin,’ comparing birth control use to navigating
+          relationships. Motivated by personal and shared experiences, this
+          research critiques gender bias in the pharmaceutical industry and
+          societal expectations, advocating for transparency and inclusive
+          research into womxn’s health.
+        </p>
+      </div>
+      <div class="student_container" id="French">
+        <div class="name_title_container">
+          <h2 class="title">
+            <a
+              href="https://kabk.github.io/go-theses-25-benaiah-french"
+              target="_blank"
+              >A beaver, Fatbike and analogue camera →</a
+            >
+          </h2>
+          <h2 class="name">Benaiah French</h2>
+        </div>
+        <div class="keywords_container">
+          <h2>Fieldwork</h2>
+          <h2>Wildernis</h2>
+          <h2>Storytelling</h2>
+          <h2></h2>
+        </div>
+        <p class="question">What happens upstream?</p>
+        <p class="preview_text">
+          What can a journey along a canal in the Netherlands bring you?
+          Analyzing both inside and outside of the surface, it’s a consideration
+          of whether we are still safe in the future in the dikes. What can we
+          learn from listening to entities? Further down, it opens the countries
+          fight and paradoxes towards the beaver and its complex relationship in
+          the landscape. Fieldwork with a forest ranger will offer a new scope
+          on a threat inside our dikes, and a broken 5,000-year-old relic may
+          hold the answer to all uncertain questions. A group of fat bikers pass
+          by, a disappointing UFO landing site, and a fish doorbell offer
+          unexpected perspectives on coexistence. What happens upstream? The
+          current is drawing me in to know what happens at the end.
+        </p>
+      </div>
+      <div class="student_container" id="Gazmar">
+        <div class="name_title_container">
+          <h2 class="title">
+            <a
+              href="https://kabk.github.io/go-theses-25-sara-gazmar"
+              target="_blank"
+              >Who will take care of the absent? →</a
+            >
+          </h2>
+          <h2 class="name">Sára Gázmár</h2>
+        </div>
+        <div class="keywords_container">
+          <h2>Process Philosophy</h2>
+          <h2>Absentology</h2>
+          <h2>Container</h2>
+          <h2></h2>
+        </div>
+        <p class="question">
+          How can design celebrate the accidental absence sourced from
+          containers in the urban landscape?
+        </p>
+        <p class="preview_text">
+          I hope one leaves this theoretical interlude with eyes open wider and
+          mind keener to absorb the surroundings in a more purposeful way. It is
+          about a way of looking, a mindset and a tool for all designers to
+          treat absence in a refreshing way. An offer to reflect on the
+          accidental and let it happen, further embrace it when possible.
+        </p>
+      </div>
+      <div class="student_container" id="Gresko">
+        <div class="name_title_container">
+          <h2 class="title">
+            <a
+              href="https://kabk.github.io/go-theses-25-domonkos-gresko"
+              target="_blank"
+              >The Sonic Experiences of Aengus G. →</a
+            >
+          </h2>
+          <h2 class="name">Domo Greskó</h2>
+        </div>
+        <div class="keywords_container">
+          <h2>Sonic Vibrations</h2>
+          <h2>Counter Reality</h2>
+          <h2>Listening</h2>
+          <h2></h2>
+        </div>
+        <p class="question">
+          What is a sound if we listen beyond our ears? And how does it change
+          the role of listening?
+        </p>
+        <p class="preview_text"></p>
+      </div>
+      <div class="student_container" id="Her">
+        <div class="name_title_container">
+          <h2 class="title">
+            <a
+              href="https://kabk.github.io/go-theses-25-yejin-her"
+              target="_blank"
+              >Unseen Flow →</a
+            >
+          </h2>
+          <h2 class="name">Jin Her</h2>
+        </div>
+        <div class="keywords_container">
+          <h2>Border</h2>
+          <h2>Datafeudalism</h2>
+          <h2>Mobility</h2>
+          <h2></h2>
+        </div>
+        <p class="question">
+          How do states and corporations use technology-based surveillance
+          systems to control our mobility and identity?
+        </p>
+        <p class="preview_text">
+          This thesis critically examines the phenomenon in which essential
+          human mobility is restricted by technological systems through spatial
+          boundaries, modern surveillance infrastructure based on artist work,
+          related papers, and platform cases. It explores how airports,
+          automated doors, digital authentication developed within social
+          structures define and control individuals. To achieve this purpose, it
+          will first discuss borders and airport security procedures. Second, it
+          will examine Bruno Latour's actor-network theory, focusing on how
+          doors facilitate approval and exclusion, as well as the role of
+          transparent materials in their dual function of visibility and
+          obstruction. Finally, identity and travel instincts are shaped by
+          socio-economic transformations extending into both digital and
+          physical realms. It highlights how datafied mobility leading to a
+          ‘control trap’ where convenience reinforces constant tracking.
+        </p>
+      </div>
+      <div class="student_container" id="Hwingwiri">
+        <div class="name_title_container">
+          <h2 class="title">
+            <a
+              href="https://kabk.github.io/go-theses-25-tadiwa-hwingwiri"
+              target="_blank"
+              >The Pen as a Symbol of Progress in Zimbabwe →</a
+            >
+          </h2>
+          <h2 class="name">Tad Hwingwiri</h2>
+        </div>
+        <div class="keywords_container">
+          <h2>Colonization</h2>
+          <h2>Economics</h2>
+          <h2>Storytelling</h2>
+          <h2></h2>
+        </div>
+        <p class="question">
+          How do the stories we tell ourselves shape our perceptions of
+          ourselves and history?
+        </p>
+        <p class="preview_text">
+          This thesis explores the pen’s role in Zimbabwe’s socio-political
+          evolution through graphic design, from colonial oppression to
+          liberation in 1980 and beyond. Using media and family history, it
+          reimagines narratives for self-determination.
+        </p>
+      </div>
+      <div class="student_container" id="Hyun">
+        <div class="name_title_container">
+          <h2 class="title">
+            <a
+              href="https://kabk.github.io/go-theses-25-sunghyun-hwang"
+              target="_blank"
+              >Subtitles & Captions →</a
+            >
+          </h2>
+          <h2 class="name">Sung Hyun Hwang</h2>
+        </div>
+        <div class="keywords_container">
+          <h2>Language</h2>
+          <h2>Meditation</h2>
+          <h2>Writing</h2>
+          <h2></h2>
+        </div>
+        <p class="question">
+          Can my life in the Netherlands become the subtitles of my story?
+        </p>
+        <p class="preview_text">
+          Like the hierarchy between subtitles and main content, I have often
+          felt like a secondary presence— an afterthought, a whisper beneath the
+          noise. In a foreign land, speaking words that don’t quite translate, I
+          wonder: Can I step out of the subtitles and become the main content of
+          my own story?
+        </p>
+      </div>
+      <div class="student_container" id="Jang">
+        <div class="name_title_container">
+          <h2 class="title">
+            <a
+              href="https://kabk.github.io/go-theses-25-yena-jang"
+              target="_blank"
+              >Doubling the DMZ →</a
+            >
+          </h2>
+          <h2 class="name">Yena Jang</h2>
+        </div>
+        <div class="keywords_container">
+          <h2>Boundaries</h2>
+          <h2>DMZ</h2>
+          <h2>Internet</h2>
+          <h2></h2>
+        </div>
+        <p class="question">
+          How do the mechanisms of power domesticate both internet data and
+          wildlife in the DMZ, revealing a paradox between the spaces’
+          externally depoliticized appearance and their internally power-laden
+          reality?
+        </p>
+        <p class="preview_text">
+          The 'Green' — symbolizing nature, peace, and profit—blurs the
+          boundaries between the demilitarized zone (DMZ) in Korea and the
+          Internet space, reimagining the internet as a metaphorical forest of
+          DMZ and data as an organic life in this forest.
+        </p>
+      </div>
+      <div class="student_container" id="Jaspers">
+        <div class="name_title_container">
+          <h2 class="title">
+            <a
+              href="https://kabk.github.io/go-theses-25-angele-jaspers"
+              target="_blank"
+              >Do lambs roar? ( Yes / No) →</a
+            >
+          </h2>
+          <h2 class="name">Angèle Jaspers</h2>
+        </div>
+        <div class="keywords_container">
+          <h2>Psychology</h2>
+          <h2>Language</h2>
+          <h2>Play</h2>
+          <h2></h2>
+        </div>
+        <p class="question">
+          How can recognizing psychological tests as design translations and
+          interpretations shed light on their functioning as tools of a social,
+          classificatory power and their use as tools for regulating speech, as
+          well as point towards ways in which the visual-structural language
+          that psychological tests employ can be repurposed to invite more open
+          and honest dialogues?
+        </p>
+        <p class="preview_text">
+          This inquiry is born out of a tension I personally feel between my
+          fascination with the aesthetic quality of psychological tests and an
+          awkwardness with the classificatory power these tests carry. As a
+          translation of this experience, this thesis explores the tensions
+          between psychological tests as medical-scientific instruments, as
+          tools of power, and as works of (graphic) design.
+        </p>
+      </div>
+      <div class="student_container" id="Juras">
+        <div class="name_title_container">
+          <h2 class="title">
+            <a
+              href="https://kabk.github.io/go-theses-25-mateusz-juras"
+              target="_blank"
+              >Layered Reality and the Significance of a Role →</a
+            >
+          </h2>
+          <h2 class="name">Mateusz Juras</h2>
+        </div>
+        <div class="keywords_container">
+          <h2>Performativity</h2>
+          <h2>Performance</h2>
+          <h2>Everyday</h2>
+          <h2></h2>
+        </div>
+        <p class="question">
+          By looking for connections between theatre studies, performance art,
+          performativity of social interactions, and film I wish to explore the
+          significance of a role and narrative in relation to art and design
+          practices.
+        </p>
+        <p class="preview_text">
+          Theatrum mundi is a concept that describes life as a performance and
+          the world as a stage. This allows us to translate life into stories,
+          our surroundings into a set and objects into props. Are we all just
+          actors playing our part in a strange reality TV programme?
+        </p>
+      </div>
+      <div class="student_container" id="Konings">
+        <div class="name_title_container">
+          <h2 class="title">
+            <a
+              href="https://kabk.github.io/go-theses-25-luna-konings/"
+              target="_blank"
+            >
+              A Belly Full of Stones and a Basket Filled with Flowers →
+            </a>
+          </h2>
+          <h2 class="name">Luna Konings</h2>
+        </div>
+        <div class="keywords_container">
+          <h2>Storytelling</h2>
+          <h2>Othering</h2>
+          <h2>Rewilding</h2>
+          <h2></h2>
+        </div>
+        <p class="question">
+          How does the villainised image of the wolf shape the current debate on
+          its return to the Netherlands, and how might alternative storytelling
+          influence perspectives on coexistence with the wild?
+        </p>
+        <p class="preview_text">
+          The wolf is back in the Netherlands! But which wolf? Throughout
+          history, the wolf has taken on many forms; from a thief to an unwanted
+          body of water to a symbol of the other. These narratives, crafted by
+          human storytellers, have been projected onto the animal, often with
+          underlying intentions.
+        </p>
+      </div>
+      <div class="student_container" id="Madej">
+        <div class="name_title_container">
+          <h2 class="title">
+            <a
+              href="https://kabk.github.io/go-theses-25-nadia-madej"
+              target="_blank"
+            >
+              From Hand to Hand →
+            </a>
+          </h2>
+          <h2 class="name">Nadia Madej</h2>
+        </div>
+        <div class="keywords_container">
+          <h2>Collectivity</h2>
+          <h2>Craft</h2>
+          <h2>Connection</h2>
+          <h2></h2>
+        </div>
+        <p class="question">
+          How does collective crafting affect the feeling of empowerment of the
+          individual, how can the act of making things together bring us closer
+          to others?
+        </p>
+        <p class="preview_text">
+          This thesis explores collective crafting as a way of processing
+          memories, producing knowledge, and facilitating intergenerational
+          exchange. Through a case study from the Polish countryside it
+          illustrates how collective crafting can help preserve local culture
+          and strengthen connections between generations of women.
+        </p>
+      </div>
+      <div class="student_container" id="Marner">
+        <div class="name_title_container">
+          <h2 class="title">
+            <a
+              href="https://kabk.github.io/go-theses-25-joe-marner"
+              target="_blank"
+            >
+              Recontextualizing Home Videos for Sonic Exploration →
+            </a>
+          </h2>
+          <h2 class="name">Joe Marner</h2>
+        </div>
+        <div class="keywords_container">
+          <h2>Sound</h2>
+          <h2>Memories</h2>
+          <h2>Archive</h2>
+          <h2></h2>
+        </div>
+        <p class="question">
+          How can we recontextualize home videos for sonic exploration?
+        </p>
+        <p class="preview_text">
+          This research explores the intersection of digital archives on
+          YouTube, personal memory and identity and experimental listening
+          practices. Apple’s “Upload to YouTube” feature enabled the sharing of
+          personal videos which act as archives of everyday life, capturing
+          ephemeral moments through sound and imagery.
+        </p>
+      </div>
+      <div class="student_container" id="Moss">
+        <div class="name_title_container">
+          <h2 class="title">
+            <a
+              href="https://kabk.github.io/go-theses-25-matthew-moss"
+              target="_blank"
+            >
+              Rottencore →
+            </a>
+          </h2>
+          <h2 class="name">Matthew Moss</h2>
+        </div>
+        <div class="keywords_container">
+          <h2>Commodification</h2>
+          <h2>Gentrification</h2>
+          <h2>Creative Resistance</h2>
+          <h2>Raving</h2>
+        </div>
+        <p class="question"></p>
+        <p class="preview_text">
+          This thesis critiques capitalism’s role in commodifying urban spaces
+          and club culture, highlighting the loss of communal spaces and
+          advocating for the reclamation of creative, inclusive environments
+          against corporate control through Rottencore.
+        </p>
+      </div>
+      <div class="student_container" id="Norman">
+        <div class="name_title_container">
+          <h2 class="title">
+            <a
+              href="https://kabk.github.io/go-theses-25-sylvie-norman"
+              target="_blank"
+            >
+              Feminist Killjoys and the Patriarchal Privatization of the Female
+              body →
+            </a>
+          </h2>
+          <h2 class="name">Sylvie Norman</h2>
+        </div>
+        <div class="keywords_container">
+          <h2>Privatization</h2>
+          <h2>Nostalgia</h2>
+          <h2>Patriarchy</h2>
+          <h2></h2>
+        </div>
+        <p class="question">
+          How Does The Normalization of Body Collecting in Art, Shaped by
+          Patriarchal Ownership and Nostalgic Desire, Manifest in Society, and
+          How Can a Feminist Killjoy Perspective Critique Male Privatization of
+          the Female Body?
+        </p>
+        <p class="preview_text">
+          This thesis examines the objectification of the female body in art,
+          shaped by patriarchal systems that reduce women to passive subjects
+          for the male gaze. It critiques the normalization of 'body collecting'
+          throughout history, from Greek statues to Renaissance art, and how
+          these representations reinforce patriarchal values. Drawing on Sarah
+          Ahmed’s concept of the Feminist Killjoy, the thesis challenges the
+          male gaze and the privatization of the female body, offering a
+          critical perspective on how these dynamics perpetuate gender
+          inequality and influence societal power structures.
+        </p>
+      </div>
+      <div class="student_container" id="Oomes">
+        <div class="name_title_container">
+          <h2 class="title">
+            <a
+              href="https://kabk.github.io/go-theses-25-jack-oomes"
+              target="_blank"
+            >
+              Manifesting? →
+            </a>
+          </h2>
+          <h2 class="name">Jack Oomes</h2>
+        </div>
+        <div class="keywords_container">
+          <h2>Buddhism</h2>
+          <h2>Spirituality</h2>
+          <h2>Appropriation</h2>
+          <h2></h2>
+        </div>
+        <p class="question"></p>
+        <p class="preview_text">
+          This thesis explores the relationship between Buddhism and western
+          culture, with an emphasis on the misunderstandings that often occurs.
+          By following the way in which Buddhism was established in the west,
+          this research aims to understand which cultural and historical events
+          have contributed to shaping this misconception. Besides this
+          conceptual outcome, this research aims to understand the role of
+          representation in forming a perception, and reflects on iconography in
+          my own contemporary — Dutch and western — culture.
+        </p>
+      </div>
+      <div class="student_container" id="Rosenborg">
+        <div class="name_title_container">
+          <h2 class="title">
+            <a
+              href="https://kabk.github.io/go-theses-25-marie-af-rosenborg"
+              target="_blank"
+            >
+              Layers of Time →
+            </a>
+          </h2>
+          <h2 class="name">Marie af Rosenborg</h2>
+        </div>
+        <div class="keywords_container">
+          <h2>Preservation</h2>
+          <h2>Heritage</h2>
+          <h2>Memory</h2>
+          <h2></h2>
+        </div>
+        <p class="question">
+          Should historical buildings be reconstructed or not, and to what
+          extent should they be replicated to maintain their legacy?
+        </p>
+        <p class="preview_text">
+          This thesis explores the politics of architectural preservation
+          through the case of Børsen’s partial destruction and reconstruction.
+          It questions whether rebuilding should restore an idealized past or
+          embrace material transformation as part of a building’s evolving
+          identity. Through historical analysis and graphic design, the project
+          investigates memory, authenticity, and aesthetics in preservation.
+        </p>
+      </div>
+      <div class="student_container" id="San">
+        <div class="name_title_container">
+          <h2 class="title">
+            <a
+              href="https://kabk.github.io/go-theses-25-angel-san-juan"
+              target="_blank"
+            >
+              Copyright, Aura and Control →
+            </a>
+          </h2>
+          <h2 class="name">Angel San Juan</h2>
+        </div>
+        <div class="keywords_container">
+          <h2>Piracy</h2>
+          <h2>Access</h2>
+          <h2>Reproduction Technologies</h2>
+          <h2></h2>
+        </div>
+        <p class="question"></p>
+        <p class="preview_text">
+          Unlicensed reproduction of media is frequently condemned as unethical,
+          illicit, or even criminal. However, this perspective could overlook
+          the broader economic and ideological structures that shape access to
+          culture and knowledge. Copyright laws, largely driven by corporate
+          interests, create monopolistic systems that prioritise profit over
+          accessibility, reinforcing systemic inequalities by restricting
+          cultural participation to those with lesser financial means. This
+          thesis examines how digital piracy, and the circulation of unlicensed
+          media challenge these structures of ownership, highlighting the
+          connections of intellectual property law and media accessibility. By
+          researching piracy within broader discussions of authorship,
+          originality, and access, this thesis examines how digital media
+          landscapes both reinforce and resist capitalist control. It critically
+          analyses piracy not simply as an act of theft, but a form of
+          resistance against the dominant economic models and offers alternative
+          approaches of media distribution. Through this lens, this thesis
+          investigates the power dynamics embedded in contemporary intellectual
+          property regimes, ultimately questioning who has the right to own,
+          distribute, and engage with media in the digital age.
+        </p>
+      </div>
+      <div class="student_container" id="Sizaret">
+        <div class="name_title_container">
+          <h2 class="title">
+            <a
+              href="https://kabk.github.io/go-theses-25-romeo-sizaret"
+              target="_blank"
+            >
+              Stalen Ros →
+            </a>
+          </h2>
+          <h2 class="name">Romeo Sizaret</h2>
+        </div>
+        <div class="keywords_container">
+          <h2></h2>
+          <h2></h2>
+          <h2></h2>
+          <h2></h2>
+        </div>
+        <p class="question"></p>
+        <p class="preview_text"></p>
+      </div>
+      <div class="student_container" id="Smets">
+        <div class="name_title_container">
+          <h2 class="title">
+            <a
+              href="https://kabk.github.io/go-theses-25-merijn-smets"
+              target="_blank"
+            >
+              Camp; a Feminist Revision →
+            </a>
+          </h2>
+          <h2 class="name">Merijn Smets</h2>
+        </div>
+        <div class="keywords_container">
+          <h2>Femininity</h2>
+          <h2>Camp</h2>
+          <h2>Gendered Expectations</h2>
+          <h2></h2>
+        </div>
+        <p class="question"></p>
+        <p class="preview_text">
+          Camp—the highly stylised, delightfully artificial, or “so bad that
+          it’s good”—is the art of excess, flamboyance and irony. This thesis
+          takes a feminist perspective to trace the oh-so-fabulous history of
+          camp, from its roots in underground gay culture to mainstream
+          visibility, exploring it as a space and playground for queer and
+          feminist resistance.
+        </p>
+      </div>
+      <div class="student_container" id="Soares">
+        <div class="name_title_container">
+          <h2 class="title">
+            <a
+              href="https://kabk.github.io/go-theses-25-joana-sobral"
+              target="_blank"
+            >
+              The Machine Under the Full Moon →
+            </a>
+          </h2>
+          <h2 class="name">Joana Soares de Albergaria Ambar Sobral</h2>
+        </div>
+        <div class="keywords_container">
+          <h2>Cybernetics</h2>
+          <h2>Wilderness</h2>
+          <h2>Shapeshifting</h2>
+          <h2></h2>
+        </div>
+        <p class="question">
+          What does the myth of the werewolf teach us about our relationships
+          with machines?
+        </p>
+        <p class="preview_text">
+          Wolf-man and man-machine: two dualities in which a wild side which
+          seems to drag down a comparatively more functional side. Analyzing
+          these two manifestations of the desire to tame human nature, this text
+          will reflect on the place of wilderness within a machine society,
+          highlighting the inevitability of shapeshifting between wolf, human,
+          and machine.
+        </p>
+      </div>
+      <div class="student_container" id="Vignisdottir">
+        <div class="name_title_container">
+          <h2 class="title">
+            <a
+              href="https://kabk.github.io/go-theses-25-dagny-vignisdottir"
+              target="_blank"
+            >
+              Closely Looking, Yourself, Your Earthkin →
+            </a>
+          </h2>
+          <h2 class="name">Dagný Rósa Vignisdóttir</h2>
+        </div>
+        <div class="keywords_container">
+          <h2>Ecology</h2>
+          <h2>Storytelling</h2>
+          <h2>Symbiosis</h2>
+          <h2></h2>
+        </div>
+        <p class="question">
+          What can multispecies storytelling reveal about shared histories on
+          Earth, and how could it guide us towards more sustainable futures?
+        </p>
+        <p class="preview_text">
+          Through looking at shared origins of life on Earth and weaving human
+          narratives with multispecies accounts, this thesis explores the
+          fundamental interconnection between terrestrial beings and their
+          life-sustaining planet. It examines humankind’s positioning within the
+          natural world, its ontological connection, a cultural disconnection
+          and its many visual representations. Critically addressing the
+          commodification of nature and its role in an untimely ecological
+          collapse, it reimagines alternative worlds built on reciprocity, care,
+          and collective survival.
+        </p>
+      </div>
+      <div class="student_container" id="Wilke">
+        <div class="name_title_container">
+          <h2 class="title">
+            <a
+              href="https://kabk.github.io/go-theses-25-jakob-wilke"
+              target="_blank"
+            >
+              Reading Writing →
+            </a>
+          </h2>
+          <h2 class="name">Jakob Wilke</h2>
+        </div>
+        <div class="keywords_container">
+          <h2>Handwriting</h2>
+          <h2>Individuality</h2>
+          <h2>Technology</h2>
+          <h2></h2>
+        </div>
+        <p class="question">
+          How are deviations from handwriting standard models interpreted as
+          meaningful across various contexts?
+        </p>
+        <p class="preview_text">
+          This thesis works through evolving conceptions of the medium of
+          handwriting. It explores the tension between handwriting as a
+          representation of individuality and the imitation of standard models
+          that it requires. In particular it focuses on how deviations from the
+          standard model are interpreted as meaningful across various contexts.
+        </p>
+      </div>
+      <div class="student_container" id="Wojcinowicz">
+        <div class="name_title_container">
+          <h2 class="title">
+            <a
+              href="https://kabk.github.io/go-theses-25-kornel-wojcinowicz"
+              target="_blank"
+            >
+              Material of Lust →
+            </a>
+          </h2>
+          <h2 class="name">Kornel Wojcinowicz</h2>
+        </div>
+        <div class="keywords_container">
+          <h2>Leather</h2>
+          <h2>Erotics</h2>
+          <h2>Masculinity</h2>
+          <h2></h2>
+        </div>
+        <p class="question"></p>
+        <p class="preview_text">
+          Exploration of homosexual fetish culture and hyper-masculinity through
+          leather as a material of lust.
+        </p>
+      </div>
+      <div class="student_container" id="Wojtkiewicz">
+        <div class="name_title_container">
+          <h2 class="title">
+            <a
+              href="https://kabk.github.io/go-theses-25-michalina-wojtkiewicz"
+              target="_blank"
+            >
+              Observing the Sleeper →
+            </a>
+          </h2>
+          <h2 class="name">Michalina Wojtkiewicz</h2>
+        </div>
+        <div class="keywords_container">
+          <h2>Sleep</h2>
+          <h2>Representation</h2>
+          <h2>Surveillance</h2>
+          <h2></h2>
+        </div>
+        <p class="question">
+          In what ways has the representation of the sleeping body in art and
+          culture evolved, and what does it reveal about societal views on
+          intimacy and surveillance?
+        </p>
+        <p class="preview_text">
+          This thesis explores the role of the representation of the sleeper and
+          how it conveys themes of surveillance, intimacy and intrusion. Through
+          an exploration of art history and cultural depictions, it uncovers the
+          underlying motifs associated with the sleeping body.
+        </p>
+      </div>
+      <div class="student_container" id="Yi">
+        <div class="name_title_container">
+          <h2 class="title">
+            <a
+              href="https://kabk.github.io/go-theses-25-jeehaeng-yi"
+              target="_blank"
+            >
+              The Language of Pattern →
+            </a>
+          </h2>
+          <h2 class="name">Jeehaeng Yi</h2>
+        </div>
+        <div class="keywords_container">
+          <h2>Symbolism</h2>
+          <h2>Motifs</h2>
+          <h2>Interpretation</h2>
+          <h2></h2>
+        </div>
+        <p class="question">
+          Can patterns have their own voice as a visual language beyond their
+          ornamental and decorative role?
+        </p>
+        <p class="preview_text">
+          Have you ever seen a friend wearing a striped shirt? Have you ever
+          considered how many lines make up the stripes or what meaning they
+          might convey? Patterns are deeply embedded in our lives, yet we often
+          overlook them without conscious recognition. Although patterns are
+          among the most immediate forms of visual art in daily life, they have
+          long been undervalued as mere decorative or incidental elements. This
+          thesis aims to explore the potential of patterns as a visual language
+          that goes beyond their ornamental function. By examining the
+          historical and cultural interpretations and uses of patterns, it
+          investigates the conceptual dimensions of patterns.
+        </p>
+      </div>
+      <div class="student_container" id="Zajac">
+        <div class="name_title_container">
+          <h2 class="title">
+            <a
+              href="https://kabk.github.io/go-theses-25-nu-zajac"
+              target="_blank"
+            >
+              Letterform Through Lexicon →
+            </a>
+          </h2>
+          <h2 class="name">Nu Zając</h2>
+        </div>
+        <div class="keywords_container">
+          <h2>Type design</h2>
+          <h2>Terminology</h2>
+          <h2>Type Metaphysics</h2>
+          <h2></h2>
+        </div>
+        <p class="question">
+          How do thinking methods affect the process of designing and seeing
+          type?
+        </p>
+        <p class="preview_text">
+          What are letters? How should they look? This text investigates systems
+          of classification and theories of type as practical but under-utilised
+          design tools, informing metaphysical conceptions of type and allowing
+          one to make and observe what they otherwise may not have.
+        </p>
+      </div>
+    </div>
+    <div id="name_list_mobile"></div>
+  </body>
 </html>

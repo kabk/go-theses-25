@@ -1,9 +1,6 @@
 viewToggleGrid.classList.add("active")
 let currentView = "grid"
 
-
-const isMobile = /iPhone|iPad|iPod|Android/i.test(navigator.userAgent);
-
 function changeToGrid(){
     viewToggleList.classList.remove("active")
     viewToggleGrid.classList.add("active")
@@ -33,7 +30,10 @@ function changeToList(){
         scrolling_div.style.display = "block"
 
         name_title_containers[i].style.display = "grid"
-        name_title_containers[i].style.gridTemplateColumns = "20vw 50vw"
+        titles[i].style.order = "2"
+        names[i].style.order = "1"
+
+        name_title_containers[i].style.gridTemplateColumns = "25vw 50vw"
         student_containers[i].style.marginBottom = 0;
 
         keywords_containers[i].style.display = "none"
@@ -61,13 +61,11 @@ if(!isMobile){
     
     window.addEventListener("resize",()=>{
         if(window.innerWidth < 399){
-            changeToList()
+            location.reload()
         }
     })
     
     window.addEventListener("load",()=>{
-        if(window.innerWidth < 399){
-            changeToList()
-        }
+        changeToList()
     })
 }

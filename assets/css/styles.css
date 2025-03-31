@@ -1,19 +1,18 @@
 @font-face {
   font-family: "Article";
   src: url("../type/ArticleText-Regular.woff2") format("woff2");
-    font-style:normal;
+  font-style: normal;
 }
 @font-face {
   font-family: "Article";
   src: url("../type/ArticleText-RegularItalic.woff2") format("woff2");
-    font-style:italic;
+  font-style: italic;
 }
 @font-face {
   font-family: "ArticleExtras";
   src: url("../type/ArticleText-Supplement.woff2") format("woff2");
-    font-style:normal;
+  font-style: normal;
 }
-
 
 :root {
   --fixed-div-width: 20vw;
@@ -55,11 +54,17 @@ p {
 }
 h1,
 h2 {
-  font-size: 0.7em;
   font-weight: normal;
 }
+h1,
+h2,
 p {
-  font-size: 0.5em;
+  font-size: 0.7em;
+}
+a,
+a:visited {
+  color: black;
+  text-decoration: none;
 }
 
 #viewToggleGrid:hover,
@@ -88,27 +93,24 @@ p {
   flex-direction: column;
   justify-content: space-between;
 }
-/* #view_div {
-  display: flex;
-  justify-content: space-between;
-} */
 #filter_list_div,
 #sort_list_div,
-#view_div {
+#view_list_div {
   margin-bottom: var(--margin);
 }
 #filter_list_div p,
 #sort_list_div p,
-#view_div p {
+#view_list_div p {
   margin-left: var(--margin);
 }
 #filter_list_div :first-child,
 #sort_list_div :first-child,
-#view_div :first-child {
+#view_list_div :first-child {
   margin-left: 0;
 }
 .sort_p,
-.filter_p {
+.filter_p,
+#view_list_div p {
   width: min-content;
   white-space: nowrap;
 }
@@ -123,6 +125,13 @@ p {
   width: 30vw;
   margin-bottom: 50px;
 }
+.name_title_container h2 + h2 {
+  font-style: regular;
+}
+.name_title_container :first-child {
+  margin-bottom: 0.2em;
+  font-style: italic;
+}
 .keywords_container,
 .title,
 .name {
@@ -133,21 +142,23 @@ p {
   white-space: nowrap;
   flex-wrap: wrap;
 }
-.keywords_container h2, .keywords_container p {
+.keywords_container h2 {
   border: black 1px solid;
   width: min-content;
   padding: 1px 4px 0 4px;
   border-radius: 7px;
   margin-right: 3px;
   margin-bottom: 3px;
-  font-size: 0.5em;
 }
 .question {
   margin-bottom: calc(var(--margin) / 2);
 }
+
+#mobile_gradient,
 #name_list_mobile,
 #student_container_mobile,
-#mobile_filter_toggle {
+#mobile_filter_toggle,
+#AA {
   display: none;
 }
 
@@ -157,37 +168,55 @@ p {
     --margin: 20px;
   }
 
+  #mobile_gradient {
+    display: block;
+    width: 100vw;
+    height: 100vh;
+    position: absolute;
+    background: white;
+    background: linear-gradient(
+      0deg,
+      rgba(255, 255, 255, 1) 0%,
+      rgba(255, 255, 255, 0) 10%,
+      rgba(255, 255, 255, 0) 90%,
+      rgba(255, 255, 255, 1) 100%
+    );
+  }
+
   #filter_list_div {
     opacity: 0;
     transition: opacity 0.3s ease-in-out;
   }
 
   img {
-    filter: blur(15px);
+    filter: blur(20px);
   }
 
   h2 {
-    font-size: 1.4em;
+    font-size: 1.5em;
     font-weight: normal;
   }
   h1,
+  .keywords_container h2,
   p,
   .name {
-    font-size: 0.8em;
+    font-size: 0.9em;
   }
   h1,
-  h2 {
+  h2,
+  #question_mobile {
     margin-bottom: var(--margin);
   }
 
   #sort_list_div,
-  #view_div,
+  #view_list_div,
   #filter_list_div :first-child {
     display: none;
   }
   #filter_list_div {
     position: absolute;
     bottom: calc(2 * var(--margin));
+    transform: translate(0, 100vw);
     height: min-content;
   }
   #filter_list_div p {
@@ -197,26 +226,37 @@ p {
   #mobile_filter_toggle {
     display: block;
   }
-  #mobile_filter_toggle {
+  #student_container_mobile {
+    margin-top: 10vh;
+    width: 50vw;
+  }
+  #mobile_filter_toggle,
+  #mobile_namelist_toggle {
     position: absolute;
     bottom: var(--margin);
+  }
+  #mobile_namelist_toggle {
+    top: calc(2 * var(--margin));
   }
 
   #scrolling_div {
     margin: 0;
     display: block;
   }
+  #AA {
+    display: block;
+  }
   .student_container {
     margin-bottom: 0;
-    height: 70vh;
+    height: 500px;
   }
   .student_container * {
     display: none;
   }
   .keywords_container h2 {
-    border: black 2px solid;
+    border: black 1px solid;
     padding: 2px 5px 0 5px;
-    border-radius: 13px;
+    border-radius: 10px;
     margin-right: 5px;
     margin-bottom: 5px;
   }
@@ -224,16 +264,12 @@ p {
   #name_list_mobile {
     display: block;
     position: fixed;
+    width: 30vw;
     top: var(--margin);
-    left: calc(var(--fixed-div-width) + var(--margin));
-    width: calc(100vw - var(--fixed-div-width));
+    left: auto;
+    right: var(--margin);
   }
-}
-
-.name_title_container h2 + h2 {
-  font-style: regular;
-}
-.name_title_container :first-child {
-  margin-bottom: 0.2em;
-  font-style: italic;
+  #name_list_mobile p {
+    white-space: wrap;
+  }
 }

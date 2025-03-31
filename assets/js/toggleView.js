@@ -1,11 +1,11 @@
 viewToggleGrid.classList.add("active")
 let currentView = "grid"
 
-function changeToGrid(){
+function changeToGrid() {
     viewToggleList.classList.remove("active")
     viewToggleGrid.classList.add("active")
 
-    for(i=0;i<student_containers.length;i++){
+    for (i = 0; i < student_containers.length; i++) {
 
         scrolling_div.style.display = "grid"
 
@@ -13,12 +13,12 @@ function changeToGrid(){
         student_containers[i].style.marginBottom = 50 + "px";
 
         keywords_containers[i].style.display = "flex"
-        names[i].style.fontSize = "0.9em"
-        titles[i].style.fontSize = "0.9em"
+        names[i].style.fontSize = "1.3em"
+        titles[i].style.fontSize = "1.3em"
         questions[i].style.display = "block"
         preview_texts[i].style.display = "block"
 
-        if(isSafari){
+        if (isSafari) {
             names[i].style.fontSize = "1.5em"
             titles[i].style.fontSize = "1.5em"
         }
@@ -26,11 +26,11 @@ function changeToGrid(){
     currentView = "grid"
 }
 
-function changeToList(){
+function changeToList() {
     viewToggleGrid.classList.remove("active")
     viewToggleList.classList.add("active")
 
-    for(i=0;i<student_containers.length;i++){
+    for (i = 0; i < student_containers.length; i++) {
 
         scrolling_div.style.display = "block"
 
@@ -42,12 +42,12 @@ function changeToList(){
         student_containers[i].style.marginBottom = 0;
 
         keywords_containers[i].style.display = "none"
-        names[i].style.fontSize = "0.6em"
-        titles[i].style.fontSize = "0.6em"
+        names[i].style.fontSize = "0.8em"
+        titles[i].style.fontSize = "0.8em"
         questions[i].style.display = "none"
         preview_texts[i].style.display = "none"
 
-        if(isSafari){
+        if (isSafari) {
             names[i].style.fontSize = "1em"
             titles[i].style.fontSize = "1em"
         }
@@ -56,26 +56,26 @@ function changeToList(){
 }
 
 
-if(window.innerWidth>499){
-    viewToggleGrid.addEventListener("click",()=>{
-        if(currentView == "list"){
+if (window.innerWidth > 499) {
+    viewToggleGrid.addEventListener("click", () => {
+        if (currentView == "list") {
             changeToGrid()
         }
     })
-    
-    viewToggleList.addEventListener("click",()=>{
-        if(currentView == "grid"){
+
+    viewToggleList.addEventListener("click", () => {
+        if (currentView == "grid") {
             changeToList()
         }
     })
-    
-    window.addEventListener("resize",()=>{
-        if(window.innerWidth < 499){
+
+    window.addEventListener("resize", () => {
+        if (window.innerWidth < 499) {
             location.reload()
         }
     })
-    
-    window.addEventListener("load",()=>{
+
+    window.addEventListener("load", () => {
         changeToList()
     })
 }

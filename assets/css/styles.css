@@ -58,11 +58,11 @@ p {
 h1,
 h2 {
   font-weight: normal;
-  font-size: 0.9em;
+  font-size: 1.2em;
 }
 p,
 .keywords_container h2 {
-  font-size: 0.6em;
+  font-size: 0.8em;
 }
 a,
 a:visited {

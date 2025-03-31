@@ -13,8 +13,8 @@ function changeToGrid(){
         student_containers[i].style.marginBottom = 50 + "px";
 
         keywords_containers[i].style.display = "flex"
-        names[i].style.fontSize = "0.7em"
-        titles[i].style.fontSize = "0.7em"
+        names[i].style.fontSize = "0.9em"
+        titles[i].style.fontSize = "0.9em"
         questions[i].style.display = "block"
         preview_texts[i].style.display = "block"
     }
@@ -37,8 +37,8 @@ function changeToList(){
         student_containers[i].style.marginBottom = 0;
 
         keywords_containers[i].style.display = "none"
-        names[i].style.fontSize = "0.5em"
-        titles[i].style.fontSize = "0.5em"
+        names[i].style.fontSize = "0.6em"
+        titles[i].style.fontSize = "0.6em"
         questions[i].style.display = "none"
         preview_texts[i].style.display = "none"
     }

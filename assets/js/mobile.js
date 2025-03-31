@@ -87,7 +87,7 @@ if(isMobile){
 
                 name_mobile.style.display = "block"
                 setTimeout(()=>{
-                    image_bg.src = "../assets/images/" + studentID + ".jpg"
+                    image_bg.src = "./assets/images/" + studentID + ".jpg"
                     image_bg.style.opacity = 1
                 },200)
 

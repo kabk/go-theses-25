@@ -17,6 +17,7 @@ let sort_toggle_title = document.getElementById("sort_toggle_title")
 
 let filter_list_div = document.getElementById("filter_list_div")
     let allFilterPs = document.getElementsByClassName("filter_p")
+let filter_overlay_mobile = document.getElementById("filter_overlay_mobile")
 
 
 

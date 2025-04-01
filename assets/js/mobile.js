@@ -80,15 +80,19 @@ if (window.innerWidth < 499) {
                 let entryName = entry.target.children[0].children[1].innerText
                 let entryTitle = entry.target.children[0].children[0].children[0].innerText
                 let entryLink = entry.target.children[0].children[0].children[0].href
-                let entryQuestion = entry.target.children[2]
+                let entryQuestion = entry.target.children[2].innerText
 
                 name_mobile.innerText = entryName;
                 title_mobile.innerText = entryTitle
                 title_link_mobile.href = entryLink
-                if (question_mobile.children) {
-                    question_mobile.innerHTML = ""
-                }
-                question_mobile.appendChild(entryQuestion)
+                question_mobile.innerText = entryQuestion;
+
+                // question_mobile.appendChild(entryQuestion)
+
+                // if (question_mobile.children.length > 1) {
+                //     question_mobile.removeChild(question_mobile.children[0])
+                //     // question_mobile.appendChild(entryQuestion)
+                // }
 
 
                 if (studentID === "AA") {
